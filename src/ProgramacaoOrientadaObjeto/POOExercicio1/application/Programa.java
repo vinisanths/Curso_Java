@@ -1,7 +1,7 @@
-package POOExercicio1.application;
+package ProgramacaoOrientadaObjeto.POOExercicio1.application;
 
 
-import POOExercicio1.entidades.Retangulo;
+import ProgramacaoOrientadaObjeto.POOExercicio1.entidades.Retangulo;
 
 import java.util.Locale;
 import java.util.Scanner;

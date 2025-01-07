@@ -1,4 +1,4 @@
-package Arrays.OO.entities;
+package ProgramacaoOrientadaObjeto.OO.entities;
 
 public class Product {
     private String name;

@@ -1,4 +1,4 @@
-package POOExercicio1.entidades;
+package ProgramacaoOrientadaObjeto.POOExercicio1.entidades;
 
 public class Retangulo {
     public double altura;

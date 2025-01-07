@@ -1,8 +1,8 @@
-package POO.program;
+package ProgramacaoOrientadaObjeto.POO.program;
 
 
 
-import POO.entities.Acount;
+import ProgramacaoOrientadaObjeto.POO.entities.Acount;
 
 import java.util.Locale;
 import java.util.Scanner;

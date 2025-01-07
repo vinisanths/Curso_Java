@@ -1,6 +1,6 @@
-package Arrays.OO.aplication;
+package ProgramacaoOrientadaObjeto.OO.aplication;
 
-import Arrays.OO.entities.Product;
+import ProgramacaoOrientadaObjeto.OO.entities.Product;
 
 import java.util.Locale;
 import java.util.Scanner;
