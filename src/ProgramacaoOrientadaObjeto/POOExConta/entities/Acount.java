@@ -1,4 +1,4 @@
-package ProgramacaoOrientadaObjeto.POO.entities;
+package ProgramacaoOrientadaObjeto.POOExConta.entities;
 
 public class Acount {
     private int numeroConta;
