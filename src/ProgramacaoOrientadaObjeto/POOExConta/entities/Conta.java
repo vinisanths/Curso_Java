@@ -1,20 +1,19 @@
 package ProgramacaoOrientadaObjeto.POOExConta.entities;
 
-public class Acount {
+public class Conta {
     private int numeroConta;
     private String nome;
-
     private double saldo;
 
-    public Acount(int numeroConta, String Nome) {
+    public Conta(int numeroConta, String nome) {
         this.numeroConta = numeroConta;
         this.nome = nome;
     }
 
-    public Acount(int numeroConta, String nome, double saldoInicial) {
-        this.numeroConta = numeroConta;
+    public Conta(int numeroConta, String nome, double depositoInicial) {
         this.nome = nome;
-        saldo = saldoInicial;
+        this.numeroConta = numeroConta;
+        depositar(depositoInicial);
     }
 
     public int getNumeroConta() {
@@ -32,13 +31,20 @@ public class Acount {
     public double getSaldo() {
         return saldo;
     }
-
-    public void deposito(double valor) {
-        saldo += valor;
+    public void mudarNome(String nome){
+        this.nome = nome;
     }
 
-    public void saque(double valor) {
+    public void depositar(double valor) {
+        if (valor <= 0) {
+            System.out.println("Deposite um valor maior que 0");
+        } else {
+            saldo += valor;
+        }
+    }
 
+    public void sacar(double valor) {
+         this.saldo -= (valor + 5.0);
     }
 
     public String toString() {
@@ -47,7 +53,6 @@ public class Acount {
                 ", Nome: " +
                 nome +
                 ", Saldo: R$ " +
-                saldo;
+                String.format("%.2f", saldo);
     }
-
 }
