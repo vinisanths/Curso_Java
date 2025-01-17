@@ -1,9 +1,9 @@
-package Arrays;
+package Arrays.Exemplo;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Exemplo {
+public class ExemploVetorTipoValor {
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
@@ -11,19 +11,19 @@ public class Exemplo {
 
         System.out.println("Digite a quantidade de alturas que deseja ler: ");
         int n = sc.nextInt();
-        double [] vect = new double[n];
+        double []  vetor =  new double[n];
+        for (int i = 0; i < vetor.length; i++) {
 
-        for (int i = 0; i < n; i++) {
             System.out.printf("Digite a altura " + i +" : ");
-            vect[i] = sc.nextDouble();
+            vetor [i] = sc.nextDouble();
         }
 
         double sum = 0.0;
-        for (int i = 0; i < n; i++) {
-            sum+= vect[i];
+        for (int i = 0; i < vetor.length; i++) {
+            sum+= vetor[i];
         }
 
-        double avg = sum / n;
+        double avg = sum / vetor.length;
         System.out.printf("Média das alturas: %.2f%n", avg);
 
         sc.close();
