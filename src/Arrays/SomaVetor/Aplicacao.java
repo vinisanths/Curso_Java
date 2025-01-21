@@ -1,6 +1,5 @@
 package Arrays.SomaVetor;
 
-import java.sql.SQLOutput;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -24,12 +23,12 @@ public class Aplicacao {
             soma += vetor[i];
         }
 
-        media  = soma / vetor.length;
+        media = soma / vetor.length;
 
-            System.out.println("valores = ");
+        System.out.println("valores = ");
 
         for (int i = 0; i < vetor.length; i++) {
-            System.out.printf("%.1f%n" , vetor[i]);
+            System.out.printf("%.1f%n", vetor[i]);
         }
 
         System.out.println("Soma = " + soma);
