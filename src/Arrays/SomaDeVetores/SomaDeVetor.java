@@ -14,16 +14,9 @@ public class SomaDeVetor {
         int[] vetor2 = {5, 10, 3, 1, 10, 7};
         int vetor3[] = new int[vetor2.length];
 
-        for (int i = 0; i < vetor1.length; i++) {
-            for (int j = 0; j < vetor2.length; j++) {
-                for (int k = 0; k < vetor3.length; k++) {
-                    vetor3[i] = vetor1[i] + vetor2[i];
-                }
-            }
-        }
-
         System.out.println("VETOR RESULTANTE: ");
-        for (int i = 0; i < vetor3.length; i++) {
+        for (int i = 0; i < vetor1.length; i++) {
+            vetor3[i] = vetor1[i] + vetor2[i];
             System.out.println(vetor3[i]);
         }
 
