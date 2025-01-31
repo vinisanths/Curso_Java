@@ -23,6 +23,11 @@ public class Programa {
             System.out.println("Funcionario " + (i + 1) + ": ");
             System.out.print("ID: ");
             Integer id = sc.nextInt();
+            while (temId(list, id)){
+                System.out.println("Este ID ja existe. Tente novamente: ");
+                id = sc.nextInt();
+            }
+
             sc.nextLine();
             System.out.print("Nome: ");
             String nome = sc.nextLine();
@@ -35,27 +40,24 @@ public class Programa {
 
         System.out.print("Digite o id do Funcionario que recebera aumento: ");
         int idFunc = sc.nextInt();
-        Integer posicao = verificaID(list, idFunc);
-        if (posicao == null) {
+        Funcionario funcionario = list.stream().filter(x -> x.getId() == idFunc).findFirst().orElse(null);
+
+        if (funcionario == null) {
             System.out.println("Este Id não existe");
+            System.out.println();
         } else {
             System.out.print("Digite a porcentagem: ");
             double porcentagem = sc.nextDouble();
-            list.get(posicao).incrementaSalario(porcentagem);
+            funcionario.incrementaSalario(porcentagem);
         }
-        for (Funcionario funcionario : list) {
-            System.out.println(funcionario);
+        for (Funcionario func : list) {
+            System.out.println(func);
         }
 
         sc.close();
     }
-
-    public static Integer verificaID(List<Funcionario> list, int id) {
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).getId() == id) {
-                return i;
-            }
-        }
-        return null;
+    public static boolean temId(List <Funcionario> list, int id){
+        Funcionario funcionario = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+        return funcionario != null;
     }
 }
