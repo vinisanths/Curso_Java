@@ -9,7 +9,7 @@ import java.time.ZoneId;
  * Classe de exemplo para conversão de datas entre diferentes fusos horários e manipulação de datas e horas.
  * Demonstra como converter um Instant (UTC) para datas e horas em diferentes fusos horários.
  */
-public class DataHoraExemplo03 {
+public class DataHoraExemplo3 {
     public static void main(String[] args) {
 
         // Criando objetos de data e hora a partir de strings formatadas no padrão ISO 8601
