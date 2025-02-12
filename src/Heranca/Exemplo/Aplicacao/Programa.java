@@ -43,7 +43,7 @@ public class Programa {
         teste2.saque(200.00);
         System.out.println("Com Override: " + teste2.getSaldo());
 
-        Conta teste3 = new ContaEmpresa(103,"Jose", 1000.0, 100.0);
+        Conta teste3 = new ContaEmpresa(103,"Joao", 1000.0, 100.0);
         teste3.saque(200);
         System.out.println("Com Override e a palavra Super: " + teste3.getSaldo());
 

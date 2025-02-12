@@ -26,7 +26,7 @@ public class ContaEmpresa extends Conta {
     }
 
     @Override
-    public void saque(double valor) {
+    public final void saque(double valor) {
         super.saque(valor);
         saldo -= 2.00;
     }
