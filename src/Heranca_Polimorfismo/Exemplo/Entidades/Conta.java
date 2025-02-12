@@ -1,4 +1,4 @@
-package Heranca.Exemplo.Entidades;
+package Heranca_Polimorfismo.Exemplo.Entidades;
 
 public class Conta {
     private Integer numero;

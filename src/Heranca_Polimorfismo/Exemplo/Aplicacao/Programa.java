@@ -1,8 +1,8 @@
-package Heranca.Exemplo.Aplicacao;
+package Heranca_Polimorfismo.Exemplo.Aplicacao;
 
-import Heranca.Exemplo.Entidades.Conta;
-import Heranca.Exemplo.Entidades.ContaEmpresa;
-import Heranca.Exemplo.Entidades.ContaPoupanca;
+import Heranca_Polimorfismo.Exemplo.Entidades.Conta;
+import Heranca_Polimorfismo.Exemplo.Entidades.ContaEmpresa;
+import Heranca_Polimorfismo.Exemplo.Entidades.ContaPoupanca;
 
 public class Programa {
     public static void main(String[] args) {
@@ -47,8 +47,17 @@ public class Programa {
         teste3.saque(200);
         System.out.println("Com Override e a palavra Super: " + teste3.getSaldo());
 
+        System.out.println("========== testes Polimorfismo ===============");
 
+        Conta x = new Conta(1020, "Zezin", 1000.0);
+        Conta y = new ContaPoupanca(1021, "Mariazinha", 1000.0, 0.01);
 
+        //Realizando a mesma operação com variáveis da mesma classe, mas com instanciações diferentes
+        x.saque(50.0);
+        y.saque(50.0);
+
+        System.out.println("Classe conta, com instância em Conta: " + x.getSaldo());
+        System.out.println("Classe conta, com instância em Conta Poupança: " + y.getSaldo());
 
     }
 }
