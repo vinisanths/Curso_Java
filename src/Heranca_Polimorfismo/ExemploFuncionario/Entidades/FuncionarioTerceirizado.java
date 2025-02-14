@@ -1,4 +1,4 @@
-package Heranca_Polimorfismo.Exercicio.Entidades;
+package Heranca_Polimorfismo.ExemploFuncionario.Entidades;
 
 public class FuncionarioTerceirizado extends Funcionario {
     private Double custoAdicional;

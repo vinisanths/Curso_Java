@@ -1,7 +1,7 @@
-package Heranca_Polimorfismo.Exercicio.Aplicacao;
+package Heranca_Polimorfismo.ExemploFuncionario.Aplicacao;
 
-import Heranca_Polimorfismo.Exercicio.Entidades.Funcionario;
-import Heranca_Polimorfismo.Exercicio.Entidades.FuncionarioTerceirizado;
+import Heranca_Polimorfismo.ExemploFuncionario.Entidades.Funcionario;
+import Heranca_Polimorfismo.ExemploFuncionario.Entidades.FuncionarioTerceirizado;
 
 import java.util.ArrayList;
 import java.util.List;
