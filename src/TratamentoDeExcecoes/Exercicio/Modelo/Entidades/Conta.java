@@ -48,7 +48,7 @@ public class Conta {
     }
     
     public void deposit(Double amount){
-        this.balance = amount;
+        balance += amount;
     }
     
     public void withdraw(Double amount) throws ExcecaoDeDominio {
