@@ -7,8 +7,8 @@ public class Conta {
     private String holder;
     private Double balance;
     private Double withdrawLimit;
-    
-    public Conta(){
+
+    public Conta() {
     }
 
     public Conta(Integer number, String holder, Double amount, Double withdrawLimit) {
@@ -38,7 +38,7 @@ public class Conta {
         return balance;
     }
 
-    
+
     public Double getWithdrawLimit() {
         return withdrawLimit;
     }
@@ -46,18 +46,17 @@ public class Conta {
     public void setWithdrawLimit(Double withdrawLimit) {
         this.withdrawLimit = withdrawLimit;
     }
-    
-    public void deposit(Double amount){
+
+    public void deposit(Double amount) {
         balance += amount;
     }
-    
+
     public void withdraw(Double amount) throws ExcecaoDeDominio {
-        if (amount > balance){
-            throw new ExcecaoDeDominio(" Saldo Insuficiente para Saque! ");
-        } else if (amount > withdrawLimit) {
+        if (amount > withdrawLimit) {
             throw new ExcecaoDeDominio(" O valor excede o limite de Saque! ");
-        }
-        else {
+        } else if (amount > balance) {
+            throw new ExcecaoDeDominio(" Saldo Insuficiente para Saque! ");
+        } else {
             balance -= amount;
         }
     }
