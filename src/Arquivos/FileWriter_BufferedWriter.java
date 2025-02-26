@@ -11,7 +11,7 @@ public class FileWriter_BufferedWriter {
         String[] lines = new String[]{
                 "Good Morning!",
                 "Good Afternoon",
-                "Good Nigth"
+                "Good Night"
         };
 
         String path = "D:\\teste.txt";
