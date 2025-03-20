@@ -1,4 +1,4 @@
-package Generics_Set_Map.Exercicio.Aplicacao;
+package Generics_Set_Map.ExercicioHashSet.Aplicacao;
 
 import java.util.HashSet;
 import java.util.Scanner;
